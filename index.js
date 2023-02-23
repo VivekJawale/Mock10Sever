@@ -24,6 +24,6 @@ app.listen(PORT, async (req, res) => {
         await connect();
         console.log(`http://localhost:${PORT}`)
     } catch (error) {
-        res.send(error.message)
+        console.log(error);
     }
 })
