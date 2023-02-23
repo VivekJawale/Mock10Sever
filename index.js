@@ -1,11 +1,11 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const connect = require("./congif/db");
+const connect = require("./src/congif/db");
 const PORT = process.env.PORT || 8080;
-const userrouter = require("./features/user/user.route")
-const flightrouter = require("./features/flight/flight.route")
-const bookingrouter = require("./features/Booking/booking.route")
+const userrouter = require("./src/features/user/user.route")
+const flightrouter = require("./src/features/flight/flight.route")
+const bookingrouter = require("./src/features/Booking/booking.route")
 const app = express();
 app.use(cors());
 app.use(express.json());
