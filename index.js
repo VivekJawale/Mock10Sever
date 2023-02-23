@@ -14,7 +14,7 @@ app.use(express.json());
 app.use("/api", userrouter) // for user authentication like Login Signup
 app.use("/api", flightrouter) // for flight info  ,adding new flights update and delete flights
 app.use("/api", bookingrouter)
-app.get("", async (req, res) => {
+app.get("/", async (req, res) => {
     res.send("Hello")
 })
 
