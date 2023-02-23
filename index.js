@@ -17,6 +17,9 @@ app.use("/api", bookingrouter)
 app.get("/", async (req, res) => {
     res.send("Hello")
 })
+app.get("/api", async (req, res) => {
+    res.send("Hello to the api")
+})
 
 
 app.listen(PORT, async (req, res) => {
